@@ -53,11 +53,14 @@ syn match rustLifetime /'\w\+\>'\@!/
 
 syn match rustPathStart /\(\l\|_\)+\(::\)\@=/
 
+syn match rustMacro /\(\l\|_\)\+\s*!/
+
 hi def link rustPrimitiveType PrimitiveType
 hi def link rustEnum rustType
 hi def link rustStruct rustType
 hi def link rustGenericsTypeParameters rustType
 hi def link rustDotOperator rustOperator
+hi def link rustMacro SpecialIdentifier
 
 hi def link rustAccess Access
 hi def link rustConstantIdentifier Identifier
