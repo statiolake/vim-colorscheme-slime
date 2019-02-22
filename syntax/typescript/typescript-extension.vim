@@ -8,8 +8,8 @@ syn keyword typescriptSpecialPrimitiveType null undefined
 syn keyword typescriptAccess private public
 syn keyword typescriptStatic static
 
-syn match typescriptIdentifier /\<[^ 1-9\[\]{}()<>+\-*/=;:@\\][^ \[\]{}()<>+\-*/=;:@\\]*\>/
-syn match typescriptFunction /\<[^ 1-9\[\]{}()<>+\-*/=;:@\\][^ \[\]{}()<>+\-*/=;:@\\]*\>\s*(\@=/
+syn match typescriptIdentifier /\<[^ 0-9\[\]{}()<>+\-*/=;:@\\][^ \[\]{}()<>+\-*/=;:@\\]*\>/
+syn match typescriptFunction /\<[^ 0-9\[\]{}()<>+\-*/=;:@\\][^ \[\]{}()<>+\-*/=;:@\\]*\>\s*(\@=/
 
 syn match typescriptQuestion /?/
 syn match typescriptDot /\./
