@@ -18,7 +18,7 @@ hi! link Conceal Normal
 hi CursorLine guifg=NONE guibg=#293031 gui=none
 
 " EOF以降の~など
-hi! link NonText Comment
+hi! link NonText Ignore
 
 " コメント
 hi Comment guifg=#7c8280 guibg=NONE gui=none
@@ -51,7 +51,10 @@ hi Constant guifg=#8caec1 guibg=NONE gui=none
 
 " 特殊記号
 hi Special guifg=#d88f56 guibg=NONE gui=none
-hi! link SpecialKey Special
+hi! link SpecialKey Ignore
+
+" 無視する系
+hi Ignore guifg=#444a48 guibg=NONE gui=none
 
 " テキスト状態
 "--------------------------------------------------------------------------------
