@@ -235,6 +235,10 @@ hi! link vimGroup Variable
 hi! link vimHiAttrib SpecialIdentifier
 hi! link vimHiTerm Variable
 hi! link vimFunction Function
+hi! link vimUserFunc Function
+hi! link vimCommand Declarator
+hi! link vimIsCommand Keyword
+hi! link vimNotFunc Conditional
 
 "--------------------------------------------------------------------------------
 " Rust
