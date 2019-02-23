@@ -234,6 +234,7 @@ hi! link helpSectionDelim Comment
 hi! link vimGroup Variable
 hi! link vimHiAttrib SpecialIdentifier
 hi! link vimHiTerm Variable
+hi! link vimFunction Function
 
 "--------------------------------------------------------------------------------
 " Rust
