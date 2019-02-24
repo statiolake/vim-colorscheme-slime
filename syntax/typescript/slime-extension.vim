@@ -8,13 +8,13 @@ syn keyword typescriptSpecialPrimitiveType null undefined
 syn keyword typescriptAccess private public
 syn keyword typescriptStatic static
 
-syn match typescriptIdentifier /\<[^ 0-9\[\]{}()<>+\-*/=;:@\\][^ \[\]{}()<>+\-*/=;:@\\]*\>/
-syn match typescriptFunction /\<[^ 0-9\[\]{}()<>+\-*/=;:@\\][^ \[\]{}()<>+\-*/=;:@\\]*\>\s*(\@=/
+syn match typescriptIdentifier /\<[^[:space:][:punct:][:digit:]][^[:space:][:punct:]]*\>/
+syn match typescriptFunction /\<[^[:space:][:punct:][:digit:]][^[:space:][:punct:]]*\>[:space:]*(\@=/
 
 syn match typescriptQuestion /?/
 syn match typescriptDot /\./
 syn match typescriptColon /:/
-syn match typescriptType /\<\(\u\l*\)\+\>/
+syn match typescriptType /\<[[:upper:]][[:alnum:]]*\>/
 syn clear typescriptInterpolation
 syn region typescriptInterpolation matchgroup=typescriptInterpolationDelimiter start="${" end="}" contains=@typescriptExpression,typescriptThis,typescriptFunction contained
 
