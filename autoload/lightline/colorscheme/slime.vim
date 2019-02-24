@@ -14,25 +14,24 @@ let s:p = { "normal" : {} , "inactive": {} , "insert"  : {} ,
 let s:p.normal.left     = [[s:string, s:lighter], [s:string, s:darker]]
 let s:p.normal.middle   = [[s:string, s:dark]]
 let s:p.normal.right    = [[s:string, s:lighter], [s:string, s:darker]]
+let s:p.normal.error    = [[s:string, s:red], [s:string, s:darker]]
+let s:p.normal.warning  = [[s:string, s:yellow], [s:string, s:darker]]
 
 let s:p.inactive.left   = copy(s:p.normal.middle)
 let s:p.inactive.middle = copy(s:p.normal.middle)
 let s:p.inactive.right  = copy(s:p.normal.middle)
 
-let s:p.insert.left     = [[ s:string, s:blue ]]
+let s:p.insert.left     = [[s:string, s:blue], [s:string, s:darker]]
 let s:p.insert.right    = copy(s:p.normal.right)
 
-let s:p.visual.left     = [[ s:string, s:orange ]]
+let s:p.visual.left     = [[s:string, s:orange], [s:string, s:darker]]
 let s:p.visual.right    = copy(s:p.normal.right)
 
-let s:p.replace.left    = [[ s:string, s:red ]]
+let s:p.replace.left    = [[s:string, s:red], [s:string, s:darker]]
 let s:p.replace.right   = copy(s:p.normal.right)
 
 let s:p.tabline.left    = copy(s:p.normal.middle)
-let s:p.tabline.tabsel  = [[ s:string, s:lighter ]]
+let s:p.tabline.tabsel  = [[s:string, s:lighter]]
 let s:p.tabline.right   = copy(s:p.normal.middle)
-
-let s:p.normal.error    = [[ s:string, s:red ]]
-let s:p.normal.warning  = [[ s:string, s:yellow ]]
 
 let g:lightline#colorscheme#slime#palette = lightline#colorscheme#fill(s:p)
