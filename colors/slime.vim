@@ -287,9 +287,18 @@ hi! link NERDTreeBookMark Statement
 "--------------------------------------------------------------------------------
 " ALE
 "--------------------------------------------------------------------------------
-hi ALEErrorLine guifg=NONE guibg=#2d1314
-hi ALEError guifg=NONE guibg=NONE gui=undercurl
-hi ALEErrorSign guifg=fg guibg=#685354 gui=none
+hi ALEErrorLine guifg=NONE guibg=NONE gui=none
+hi ALEError guifg=NONE guibg=NONE gui=undercurl guisp=#f44747
+hi ALEErrorSign guifg=#f44747 guibg=NONE gui=none
+hi ALEVirtualTextError guifg=#f44747 guibg=NONE gui=none
 
-hi ALEWarningLine guifg=NONE guibg=#233030
-hi ALEWarning guifg=NONE guibg=NONE gui=undercurl guisp=#0daeaf
+hi ALEWarningLine guifg=NONE guibg=NONE gui=none
+hi ALEWarning guifg=NONE guibg=NONE gui=undercurl guisp=#d8d29a
+hi ALEWarningSign guifg=#d8d29a guibg=NONE gui=none
+hi ALEVirtualTextWarning guifg=#d8d29a guibg=NONE gui=none
+
+"--------------------------------------------------------------------------------
+" Coc
+"--------------------------------------------------------------------------------
+hi! CocHighlightText guifg=NONE guibg=#4A5050 gui=none
+hi! CocFloating guifg=NONE guibg=#404F4D gui=none
